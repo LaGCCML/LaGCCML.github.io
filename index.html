@@ -11,6 +11,8 @@
 <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
 <!-- Bootstrap CSS (don't forget JavaScript at the bottom) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Bootstrap Font Icon CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <!-- Custom styles for this template -->
 <!-- Dashboard style https://getbootstrap.com/docs/4.0/examples/dashboard/ (don't forget JavaScript at the bottom) -->
 <link href="assets/my_css/dashboard.css" rel="stylesheet">
@@ -78,15 +80,27 @@ h5 {font-weight: 800; color: navy !important;}
 	<li class="nav-item"><a class="nav-link" href="#spanishM"><span data-feather="pen-tool"></span>Spanish</a></li>
 </ul>
 </div></nav>
-
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 text-large">
 <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"> -->
 <!--<p>Short link to this page is <a href="http://t-nagano.info/MLFlyers">http://t-nagano.info/MLFlyers</a></p>-->
-<h3>Modern Languages and Literatures Program: Course Information (<a href="http://bit.ly/LG-ML" target="_blank">http://bit.ly/LG-ML</a>)</h3>
+
+<!--Toast-->
+<div class="position-fixed top-0 end-0 p-5" style="z-index: 11">
+<div id="liveToast" class="toast" role="alert" data-bs-delay="15000" aria-live="assertive" aria-atomic="true">
+<div class="toast-header text-white bg-primary">
+	<i class="bi bi-chat-dots-fill fa-lg" ></i> <strong class="me-auto">Website Manager</strong>
+	<small>Saturday, August 12, 2023</small>
+	<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+The website has been moved to a free host under Github. The new URL is <a href="https://lagccml.github.io" target="_blank">https://lagccml.github.io</a>. See <a href="https://pages.github.com" target="_blank">https://pages.github.com</a> for more information about the host.
+</div></div></div>
+<!--End of Toast-->
+
+<h3>Modern Languages and Literatures Program: Course Information (<a href="https://lagccml.github.io" target="_blank">https://lagccml.github.io</a>)
 <div class="float-right;">Last update: <script type="text/javascript">lastUpdate = new Date(document.lastModified); document.write(lastUpdate.toLocaleString()); </script>.</div>
 <div style="height:40px"></div>
-
 <h4 class="mt-5 p-2 mb-1 bg-primary text-white rounded" id="registration">Registration Information</h4>
 <!-- #################################
 Fall 2023 Registration
@@ -1320,6 +1334,8 @@ The document below presents an overview of the current articulation agreement wi
 <script>feather.replace()</script>
 <!-- JavaScript for dashboard -->
 <script src="assets/js/dashboard.js"></script>
+<!-- JavaScript for toast -->
+<script src="assets/js/my_toast.js"></script>
 </body>
 </html>
 </div>
